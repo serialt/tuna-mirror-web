@@ -1,0 +1,23 @@
+
+NGINX JavaScript (njs)
+----------
+
+njs is a subset of the JavaScript language that allows extending nginx
+functionality. njs is created in compliance with ECMAScript 5.1 (strict mode)
+with some ECMAScript 6 and later extensions. The compliance is still evolving.
+
+The documentation is available online:
+
+  http://nginx.org/en/docs/njs/
+
+Please ask questions, report issues, and send patches to the mailing list:
+
+    nginx-devel@nginx.org (http://mailman.nginx.org/mailman/listinfo/nginx-devel)
+
+or via Github:
+
+    https://github.com/nginx/njs
+
+--
+NGINX, Inc., http://nginx.com
+

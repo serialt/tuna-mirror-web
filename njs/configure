@@ -1,0 +1,40 @@
+#!/bin/sh
+
+# Copyright (C) Igor Sysoev
+# Copyright (C) NGINX, Inc.
+
+
+# Disable localized program messages.
+LC_ALL=C
+export LC_ALL
+
+# Stop on error exit status.
+set -e
+# Stop on uninitialized variable.
+set -u
+
+. auto/init
+. auto/os
+. auto/options
+. auto/cc
+. auto/types
+. auto/endianness
+. auto/clang
+. auto/time
+. auto/memalign
+. auto/getrandom
+. auto/explicit_bzero
+. auto/pcre
+. auto/readline
+. auto/sources
+
+NJS_LIB_AUX_CFLAGS="$NJS_PCRE_CFLAGS"
+
+NJS_LIBS="$NJS_LIBRT"
+NJS_LIB_AUX_LIBS="$NJS_PCRE_LIB"
+
+. auto/make
+
+. auto/expect
+
+. auto/summary

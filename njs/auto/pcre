@@ -1,0 +1,41 @@
+
+# Copyright (C) Igor Sysoev
+# Copyright (C) NGINX, Inc.
+
+
+NJS_PCRE_CFLAGS=
+NJS_PCRE_LIB=
+
+njs_found=no
+
+if /bin/sh -c "(pcre-config --version)" >> $NJS_AUTOCONF_ERR 2>&1; then
+
+    NJS_PCRE_CFLAGS=`pcre-config --cflags`
+    NJS_PCRE_LIB=`pcre-config --libs`
+
+    njs_feature="PCRE library"
+    njs_feature_name=NJS_HAVE_PCRE
+    njs_feature_run=no
+    njs_feature_incs=$NJS_PCRE_CFLAGS
+    njs_feature_libs=$NJS_PCRE_LIB
+    njs_feature_test="#include <pcre.h>
+
+                     int main(void) {
+                         pcre  *re;
+
+                         re = pcre_compile(NULL, 0, NULL, 0, NULL);
+                         if (re == NULL)
+                             return 1;
+                         return 0;
+                     }"
+    . auto/feature
+fi
+
+if [ $njs_found = no ]; then
+    echo
+    echo $0: error: no PCRE library found.
+    echo
+    exit 1;
+fi
+
+echo " + PCRE version: `pcre-config --version`"
