@@ -114,7 +114,7 @@
 						</div>
 						<div class="thuhidden {%if site.issue%}col-md-4{%endif%}">
 							<h4> {% fa_svg fas.fa-link %} 域名选择 </h4>
-							<ul>
+							<!-- <ul>
 								<li><a href="{{ site.url }}">{{ site.url }}</a> 自动选择 </li>
 								{% if site.urlv6 %}
 									<li><a href="{{ site.urlv6 }}">{{ site.urlv6 }}</a> 只解析 IPv6</li>
@@ -122,7 +122,7 @@
 								{% if site.urlv4 %}
 									<li><a href="{{ site.urlv4 }}">{{ site.urlv4 }}</a> 只解析 IPv4</li>
 								{% endif %}
-							</ul>
+							</ul> -->
 						</div>
 						{% unless page.legacy or site.hide_download or site.issue %}
 						<div id="download-link">
@@ -144,15 +144,15 @@
 						<div {%if site.issue%}class="col-md-2"{%endif%}>
 							<h4> {% fa_svg fas.fa-external-link-alt %} 相关链接 </h4>
 							<ul>
-								<li><a href="/help/">使用帮助</a></li>
 								{% unless site.issue %}
 								<li><a href="/status/#server-status">服务器状态</a></li>
 								<li><a href="/status/#syncing-status">同步状态</a></li>
 								{% endunless %}
-								<li class="thuhidden"><a href="https://tuna.moe/">清华大学 TUNA 协会</a></li>
+								<li class="thuhidden"><a href="https://tuna.moe/">Tsinghua TUNA 协会</a></li>
 								<li><a href="https://github.com/tuna/tunasync">镜像管理器源码</a></li>
 								<li><a href="https://github.com/tuna/tunasync-scripts">自定义镜像脚本</a></li>
 							</ul>
+						<h4> <a href="/help/">使用帮助</a> </h4>
 						</div>
 					{% unless site.issue %}
 					</div>

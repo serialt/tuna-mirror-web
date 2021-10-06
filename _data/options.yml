@@ -1,35 +1,15 @@
 # Content Related
 mirror_desc:
-  - name: AOSP
-    desc: Android 操作系统源代码
-  - name: AdoptOpenJDK
-    desc: 社区维护的 OpenJDK 二进制包
-  - name: AUR
-    desc: Arch Linux 用户软件库
-  - name: Bananian
-    desc: 为 Banana Pi 制作的，基于官方 Debian 仓库的发行版镜像和软件包仓库
-  - name: CPAN
-    desc: Perl 语言软件库
-  - name: CRAN
-    desc: R 语言的可执行文件、源代码和说明文件，也收录了各种用户撰写的软件包
-  - name: CTAN
-    desc: TeX 的各种发行版、软件包和文档
-  - name: CocoaPods
-    desc: Objective-C 和 Swift 的依赖管理器
-  - name: ELK
-    desc: 现已更名为 Elastic Stack，仅保留用作向后兼容
-  - name: FreeCAD
-    desc: 基于 Qt 的计算机辅助设计程序
-  - name: KaOS
-    desc: 一个基于 KDE 的独立发行版
-  - name: NetBSD
-    desc: NetBSD 的安装镜像和部分系统源码
-  - name: OpenBSD
-    desc: OpenBSD 的安装镜像和官方软件包仓库
   - name: VSCodium
     desc: VS Code 的社区编译版本
-  - name: adobe-fonts
-    desc: Adobe 公司的开源字体
+  - name: book
+    desc: 电子书
+  - name: ios
+    desc: 镜像文件
+  - name: printer
+    desc: 打印机
+  - name: repo 
+    desc: 基于rpm技术的repo文件
   - name: alpine
     desc: Alpine Linux 的安装镜像和官方软件包仓库
   - name: anaconda
@@ -409,7 +389,7 @@ mirror_desc:
   - name: texstudio
     desc: 使用 Qt 编写的自由的 LaTeX 套件
   - name: thuthesis
-    desc: 清华大学学位论文 LaTeX 模板
+    desc: IMAU学位论文 LaTeX 模板
   - name: tinycorelinux
     desc: 为嵌入式开发的微型 Linux 发行版
   - name: tlpretest

@@ -6,29 +6,29 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 清华大学开源软件镜像站
+title: IMAU软件镜像站
 # title: 北京外国语大学开源软件镜像站
-school: 清华大学
+school: IMAU
 # school: 北京外国语大学
-brand: Tsinghua Open Source Mirror
-operator: 清华大学信息化技术中心
+brand: IMAU Source Mirror
+operator: IMAU OPS
 author: Tsinghua University TUNA Association
-desc: 致力于为国内和校内用户提供高质量的开源软件镜像、Linux 镜像源服务，帮助用户更方便地获取开源软件。本镜像站由清华大学 TUNA 协会负责运行维护。
+desc: 致力于为国内和校内用户提供高质量的开源软件镜像、Linux 镜像源服务，帮助用户更方便地获取开源软件。本镜像站由 IMAU 协会负责运行维护。
 # operator: 北外信息技术中心
 logo: true
 meow_404: true
-issue_tag: tuna
+issue_tag: imau
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: "/:categories/:title/"
-url: "https://mirrors.tuna.tsinghua.edu.cn"
-hostname: "mirrors.tuna.tsinghua.edu.cn"
-urlv4: "https://mirrors4.tuna.tsinghua.edu.cn"
-urlv6: "https://mirrors6.tuna.tsinghua.edu.cn"
+url: "http://mirrors.serialt.com"
+hostname: "mirrors.serialt.com"
+urlv4: "https://mirrors4.serialt.com"
+urlv6: "https://mirrors6.serialt.com"
 aosp: "aosp.tuna.tsinghua.edu.cn"
 arch_archive: "arch-archive.tuna.tsinghua.edu.cn"
 aur: "aur.tuna.tsinghua.edu.cn"
 pypi: "pypi.tuna.tsinghua.edu.cn"
-homelink: "https://tuna.moe"
+homelink: "https://github.com/serialt"
 hide_navbar: false
 hide_download: false
 hide_server_status: false
